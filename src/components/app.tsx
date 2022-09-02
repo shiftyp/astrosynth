@@ -19,7 +19,7 @@ export const App = () => {
       const [h, s, l]= rgb2hsv(r, g, b);
 
       play((1 - h / 360) * 126 + 130, l / 100);
-      vibrate(l);
+      if (l / 25) vibrate([100, 100, 100]);
     } else {
       play(0, 0);
       vibrate(0);

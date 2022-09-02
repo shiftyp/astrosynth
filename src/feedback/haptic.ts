@@ -1,3 +1,3 @@
-export const vibrate = (level: number) => {
-  window.navigator.vibrate(level);
+export const vibrate = (duration: number | number[]) => {
+  window.navigator.vibrate(duration);
 };
