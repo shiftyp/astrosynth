@@ -15,7 +15,7 @@ export const init = () => {
   oscillator = context.createOscillator();
 
   oscillator.connect(masterVolume);
-  oscillator.type = "square";
+  oscillator.type = "sine";
   oscillator.start(0);
 }
 
